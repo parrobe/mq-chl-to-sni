@@ -5,7 +5,7 @@ While the standard is the SNI header is set to the hostname the client is attemp
 
 If you want to use the SNI header to route IBM MQ traffic then you need to ensure you route off the correct SNI, the tools contained here can help convert an IBM MQ channel name to the SNI format for entry into your router or OpenShift Routes configuration.
 
-Alternatively, from IBM MQ version 9.2.4 CD and 9.3.0 LTS the [OutboundSNI property](https://www.ibm.com/docs/en/ibm-mq/9.2?topic=programs-outboundsni-property) can be used to tell IBM MQ to use a hostname instead of a channel name
+Alternatively, from IBM MQ version 9.2.1 CD (queue managers, C , Unmanaged .NET, Java & JMS cliens), v9.2.4 CD (managed .NET clients) and 9.3.0 LTS (all) the [OutboundSNI property](https://www.ibm.com/docs/en/ibm-mq/9.2?topic=programs-outboundsni-property) can be used to tell IBM MQ to use a hostname instead of a channel name
 for the SNI header.
 
 ## Tool usage
